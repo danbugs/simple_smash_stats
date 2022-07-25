@@ -1,6 +1,6 @@
 INSTALL_DIR ?= /usr/local
 PIDGTM ?= target/release/pidgtm
-SSS ?= target/release/sss
+SMITHE ?= target/release/smithe
 
 # CARGO
 .PHONY: build
@@ -19,7 +19,7 @@ improve:
 #INSTALL
 .PHONY: install
 install:
-	install target/release/sss $(INSTALL_DIR)/bin
+	install target/release/smithe $(INSTALL_DIR)/bin
 	install target/release/pidgtm $(INSTALL_DIR)/bin
 
 # MIGRATIONS

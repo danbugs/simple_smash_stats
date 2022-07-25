@@ -4,10 +4,10 @@ use tracing::Level;
 use tracing_subscriber::FmtSubscriber;
 
 use clap::{Parser, Subcommand};
-use simple_smash_stats::sss_command_handlers::{event::handle_event, player::handle_player};
+use smithereens::smithe_command_handlers::{event::handle_event, player::handle_player};
 use url::Url;
 
-/// Simple Smash Stats, or SSS, is a digested open-source data visualizer tool for your Smash results.
+/// Smithereens (or, smithe) is a digested open-source data visualizer tool for your Smash results.
 #[derive(Parser)]
 #[clap(author, version, about)]
 struct Cli {
